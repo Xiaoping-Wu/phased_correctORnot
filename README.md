@@ -1,12 +1,14 @@
 ## Verify phased data by trio samples
 
-#Concept
+### Concept
+
 	•	Phasing determines which alleles come from the same chromosome (haplotype).
 	•	Trio information provides a natural reference:
 	•	Each child allele must match one allele from the mother and one from the father.
 	•	Mendelian inheritance violations indicate either genotyping errors or phasing errors.
 
-#Steps to verify phasing with trios
+### Steps to verify phasing with trios
+
 Step 1: Identify heterozygous sites
 	•	Focus on heterozygous SNPs in the child, because homozygous sites are uninformative for phasing.
 
@@ -24,11 +26,13 @@ Step 4: Detect Mendelian inconsistencies
 	•	If the child carries an allele not present in either parent, that indicates: Genotyping error, or Rare de novo mutation.
 	•	For phasing verification, Mendelian-consistent sites are the focus.
 
-#Tools for trio-based phasing validation
+### Tools for trio-based phasing validation
+
 	•	PLINK: can detect Mendelian inconsistencies (--mendel) and output basic statistics.
 	•	HapCUT2 / SHAPEIT / Eagle:
 
-#What I did here
+### What I did here
+
 Here I do Visual check by:
 1. select a small region and convert to vcf file;
 2. Identify heterozygous SNPs in the child;
